@@ -1,0 +1,60 @@
+$padding: 5px;
+
+.position {
+    display: flex;
+    flex-direction: row;
+    padding: $padding;
+}
+
+.Stock {
+    display: flex;
+    flex-grow: 3;
+    flex-direction: column;
+    border: 1px dashed lightsalmon;
+    margin: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover {
+        
+    }
+
+    &-header {
+        @extend .position;
+        justify-content: space-between;
+
+        &--bold {
+            font-weight: bold;
+        }
+    }
+
+    &-action {
+        text-align: center;
+        padding: $padding;        
+
+        p {
+            display: inline-block;
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+
+    &-strategies {
+        @extend .position;
+        justify-content: space-around;
+
+        div {
+            padding: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 3px;
+            color:white;
+        }
+    }    
+
+    &-footer {
+        @extend .position;
+        justify-content: space-between;
+    }
+}

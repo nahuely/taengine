@@ -1,0 +1,9 @@
+@import './reset.min.css';
+
+.Main {
+    &-container {
+        background-color:white;
+        flex-grow: 95;
+        padding: 10px;
+    }
+}

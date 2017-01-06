@@ -1,0 +1,19 @@
+@import './reset.min.css';
+
+.SideBar {
+    &-container {
+        flex-grow: 5;
+        background-color: lightsalmon;
+        padding: 10px;
+    }
+
+    &-links li {
+        width: 100%;        
+        a {
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

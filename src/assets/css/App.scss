@@ -1,0 +1,16 @@
+@import './reset.min.css';
+
+.App {
+    &-container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-navAndMain {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 95;
+    }
+}
